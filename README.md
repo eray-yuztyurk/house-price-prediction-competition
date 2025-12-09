@@ -1,18 +1,26 @@
 # House Price Prediction - Competition
 
-## Overview:
+## Overview
 
 This repository contains a machine learning project focused on predicting house prices based on various features of residential homes in Ames, Iowa. The project utilizes a dataset comprising 79 explanatory variables, including both numerical and categorical features, with the target variable being the sale price of the properties. The ultimate goal is to develop a robust predictive model to estimate house prices accurately.
 
-## Business Problem:
+---
+<p align="center">
+    <img width="600" height="600" alt="house-price-prediction" src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
+</p>
+
+
+----
+
+## Business Problem
 
 The aim of this project is to implement a machine learning solution that can predict house prices based on the characteristics of individual properties. This predictive model can be valuable for real estate professionals, homeowners, and investors in making informed decisions regarding property transactions.
 
-## Dataset:
+## Dataset
 
 The dataset consists of 1460 observations with 38 numerical variables and 43 categorical variables. It includes features such as LotFrontage, LotArea, OverallQual, OverallCond, YearBuilt, and numerous others, providing comprehensive insights into the properties' attributes.
 
-## Steps:
+## Steps
 
 1. **Exploratory Data Analysis (EDA):**
     - **Reading and Merging Datasets:** The training and testing datasets are read and merged for comprehensive analysis.
