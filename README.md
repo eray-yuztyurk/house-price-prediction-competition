@@ -1,29 +1,9 @@
 # # Ames House Price Prediction – Regression Analysis
 
----
-
-<p align="center">
-    <img width="400" alt="Ames house price prediction" src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
-</p>
-
----
-
-## Table of Contents
-- [Overview](#overview)
-- [Business Motivation](#business-motivation)
-- [Dataset](#dataset)
-- [Project Workflow](#project-workflow)
-- [Usage](#usage)
-- [Results / Evaluation](#results--evaluation)
-- [Technologies](#technologies)
-- [License](#license)
-
----
-
 <table align="center">
   <tr>
     <!-- LEFT: TABLE OF CONTENTS -->
-    <td align="left" width="50%" style="vertical-align: top;">
+    <td align="left" width="60%" style="vertical-align: top;">
       <h3>📑 Table of Contents</h3>
       <ul>
         <li><a href="#overview">Overview</a></li>
@@ -37,8 +17,8 @@
       </ul>
     </td>
         <!-- RIGHT: IMAGE -->
-    <td align="center" width="50%">
-      <img width="800" alt="Ames house price prediction"
+    <td align="center" width="40%">
+      <img width="700" alt="Ames house price prediction"
            src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
     </td>
   </tr>
