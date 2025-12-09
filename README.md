@@ -1,76 +1,108 @@
-<h1 align="center">Ames House Price Prediction – Regression Analysis</h1>
+<h1 align="center">Titanic Survival Prediction – Classification Analysis</h1>
 
 <table align="center">
   <tr>
     <!-- LEFT: TABLE OF CONTENTS -->
-    <td align="left" width="60%" style="vertical-align: top;">
+    <td align="left" width="30%" style="vertical-align: top;">
       <h3>📑 Table of Contents</h3>
       <ul>
         <li><a href="#overview">Overview</a></li>
-        <li><a href="#business-motivation">Business Motivation</a></li>
         <li><a href="#dataset">Dataset</a></li>
-        <li><a href="#project-workflow">Project Workflow</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#results--evaluation">Results / Evaluation</a></li>
-        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#dependencies">Dependencies</a></li>
+        <li><a href="#author">Author</a></li>
       </ul>
     </td>
-        <!-- RIGHT: IMAGE -->
-    <td align="center" width="40%">
-      <img width="700" alt="Ames house price prediction"
-           src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
+    <!-- RIGHT: IMAGE -->
+    <td align="center" width="70%">
+      <img width="800" alt="Titanic project cover"
+           src="https://github.com/user-attachments/assets/7d449a16-e70d-421d-9cef-640240a68d71" />
     </td>
   </tr>
 </table>
 
 ---
 
-## Overview
+## 📌 Project Overview
+This project covers the full machine learning workflow used for the competition:  
+exploratory analysis, data preprocessing, feature engineering, model development, and generating a submission file for Kaggle.
 
-In this project, I develop machine learning models to predict residential property prices in Ames, Iowa. The workflow includes data exploration, feature engineering, and building/optimizing regression models. All analyses and steps are clearly documented.
-
-## Business Motivation
-
-Accurately estimating house prices helps buyers, sellers, and analysts make informed decisions. Using open data, my goal is to deliver robust, interpretable models for this practical need.
-
-## Dataset
-
-The dataset comprises 1460 entries and includes 38 numerical and 43 categorical features, detailing various aspects of each property (e.g., LotArea, YearBuilt, OverallQual).
-
-## Project Workflow
-
-1. **Exploratory Data Analysis (EDA):**
-   - Combine train and test datasets for analysis.
-   - Identify, visualize, and handle missing values and outliers.
-   - Summarize variable distributions.
-   - Analyze feature-target relationships.
-
-2. **Feature Engineering:**
-   - Treat rare categories and encode variables for modeling.
-   - Create new features to improve predictive accuracy.
-   - Address missing and extreme values.
-
-3. **Modeling:**
-   - Split dataset for training and testing.
-   - Build and compare regression models.
-   - Tune hyperparameters for optimal results.
-   - Evaluate feature importance.
-
-## Usage
-
-Code examples and instructions are provided in the notebooks and scripts within this repository.
+Main files in this repository:
+- **`Titanic_Competition.ipynb`** — Notebook containing the entire workflow.  
+- **`titanic.csv`** — Submission file produced from the final model.
 
 ---
 
-## Results / Evaluation
+## 📂 Dataset
+The competition dataset consists of two files provided by Kaggle:
 
-The best performing model achieved a root mean squared error (RMSE) of 0.127 on the test data. Key features impacting predictions included OverallQual, GrLivArea, and YearBuilt. Further improvements are possible with additional feature engineering and ensemble methods.
+- **`train.csv`** — Passenger data with survival labels.  
+- **`test.csv`** — Same structure as the training data but without labels.
+
+---
+
+## 🔧 Methodology
+
+### 1. Setup
+Installed and imported the required libraries:  
+`pandas`, `numpy`, `seaborn`, `matplotlib`, `scikit-learn`, and `lightgbm`.
+
+### 2. Data Loading
+Loaded the training dataset and performed an initial inspection.
+
+### 3. Preprocessing
+- Handled missing values (Age, Cabin, Embarked).  
+- Created new features like **FamilySize**, **Title**, and **AgeGroup**.  
+- Encoded categorical variables and standardized selected numerical fields.
+
+### 4. Exploratory Data Analysis
+Visualized survival patterns by gender, passenger class, age, and other variables.
+
+### 5. Feature Engineering
+Used label encoding, one-hot encoding, and extracted structured information from names.
+
+### 6. Model Selection
+Tested multiple baseline models:
+- K-Nearest Neighbors (KNN)  
+- Random Forest Classifier  
+
+Random Forest showed the strongest baseline performance.
+
+### 7. Training & Validation
+Evaluated models through cross-validation to ensure generalization.
+
+### 8. Hyperparameter Tuning
+Optimized the Random Forest using `GridSearchCV`.
+
+### 9. Model Evaluation
+Metrics used:
+- Accuracy  
+- F1 Score  
+- ROC AUC  
+
+### 10. Final Predictions
+Generated predictions for the test set and saved them to **`titanic.csv`** in the required format.
 
 ---
 
-## Technologies
-
-- Python, Pandas, NumPy, scikit-learn
-- Visualization: matplotlib, seaborn
+## 📈 Results
+- **Best Model:** Random Forest Classifier  
+- **Cross-validated Accuracy:** **83.21%**
 
 ---
+
+## 🛠 Dependencies
+- Python 3.x  
+- Jupyter Notebook  
+- pandas  
+- numpy  
+- seaborn  
+- matplotlib  
+- scikit-learn  
+- lightgbm  
+
+---
+
+## 👤 Author
+**Eray Yuztyurk**
