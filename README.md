@@ -67,11 +67,11 @@ Code examples and instructions are provided in the notebooks and scripts within 
 
 The best performing model achieved a root mean squared error (RMSE) of 0.127 on the test data. Key features impacting predictions included OverallQual, GrLivArea, and YearBuilt. Further improvements are possible with additional feature engineering and ensemble methods.
 
+---
+
 ## Technologies
 
 - Python, Pandas, NumPy, scikit-learn
 - Visualization: matplotlib, seaborn
 
-## License
-
-This project is MIT licensed.
+---
