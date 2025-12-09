@@ -1,4 +1,4 @@
-# # Ames House Price Prediction – Regression Analysis
+<h1 align="center">Ames House Price Prediction – Regression Analysis</h1>
 
 <table align="center">
   <tr>
@@ -13,7 +13,6 @@
         <li><a href="#usage">Usage</a></li>
         <li><a href="#results--evaluation">Results / Evaluation</a></li>
         <li><a href="#technologies">Technologies</a></li>
-        <li><a href="#license">License</a></li>
       </ul>
     </td>
         <!-- RIGHT: IMAGE -->
