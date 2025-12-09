@@ -1,44 +1,97 @@
-# House Price Prediction - Competition
+# # Ames House Price Prediction – Regression Analysis
+
+---
+
+<p align="center">
+    <img width="400" alt="Ames house price prediction" src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
+</p>
+
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Business Motivation](#business-motivation)
+- [Dataset](#dataset)
+- [Project Workflow](#project-workflow)
+- [Usage](#usage)
+- [Results / Evaluation](#results--evaluation)
+- [Technologies](#technologies)
+- [License](#license)
+
+---
+
+<table align="center">
+  <tr>
+    <!-- LEFT: TABLE OF CONTENTS -->
+    <td align="left" width="50%" style="vertical-align: top;">
+      <h3>📑 Table of Contents</h3>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#business-motivation">Business Motivation</a></li>
+        <li><a href="#dataset">Dataset</a></li>
+        <li><a href="#project-workflow">Project Workflow</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#results--evaluation">Results / Evaluation</a></li>
+        <li><a href="#technologies">Technologies</a></li>
+        <li><a href="#license">License</a></li>
+      </ul>
+    </td>
+        <!-- RIGHT: IMAGE -->
+    <td align="center" width="50%">
+      <img width="800" alt="Ames house price prediction"
+           src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
+    </td>
+  </tr>
+</table>
+
+---
 
 ## Overview
 
-This repository contains a machine learning project focused on predicting house prices based on various features of residential homes in Ames, Iowa. The project utilizes a dataset comprising 79 explanatory variables, including both numerical and categorical features, with the target variable being the sale price of the properties. The ultimate goal is to develop a robust predictive model to estimate house prices accurately.
+In this project, I develop machine learning models to predict residential property prices in Ames, Iowa. The workflow includes data exploration, feature engineering, and building/optimizing regression models. All analyses and steps are clearly documented.
 
----
-<p align="center">
-    <img width="600" height="600" alt="house-price-prediction" src="https://github.com/user-attachments/assets/900a3eed-be14-4c13-828a-cb4e07ec86b3" />
-</p>
+## Business Motivation
 
-
-----
-
-## Business Problem
-
-The aim of this project is to implement a machine learning solution that can predict house prices based on the characteristics of individual properties. This predictive model can be valuable for real estate professionals, homeowners, and investors in making informed decisions regarding property transactions.
+Accurately estimating house prices helps buyers, sellers, and analysts make informed decisions. Using open data, my goal is to deliver robust, interpretable models for this practical need.
 
 ## Dataset
 
-The dataset consists of 1460 observations with 38 numerical variables and 43 categorical variables. It includes features such as LotFrontage, LotArea, OverallQual, OverallCond, YearBuilt, and numerous others, providing comprehensive insights into the properties' attributes.
+The dataset comprises 1460 entries and includes 38 numerical and 43 categorical features, detailing various aspects of each property (e.g., LotArea, YearBuilt, OverallQual).
 
-## Steps
+## Project Workflow
 
 1. **Exploratory Data Analysis (EDA):**
-    - **Reading and Merging Datasets:** The training and testing datasets are read and merged for comprehensive analysis.
-    - **Identifying Variables:** Numerical and categorical variables are identified for further analysis.
-    - **Adjustments:** Necessary adjustments, such as handling missing values and outliers, are made.
-    - **Distribution Analysis:** The distribution of numerical and categorical variables is examined.
-    - **Relationship Analysis:** The relationship between categorical variables and the target variable (SalePrice) is explored.
-    - **Outlier Detection:** Any outliers in the data are identified and addressed.
-    - **Missing Data Investigation:** Missing observations are investigated and handled appropriately.
+   - Combine train and test datasets for analysis.
+   - Identify, visualize, and handle missing values and outliers.
+   - Summarize variable distributions.
+   - Analyze feature-target relationships.
 
 2. **Feature Engineering:**
-    - **Handling Missing and Outlier Observations:** Necessary operations are performed to handle missing and outlier observations.
-    - **Rare Encoder:** A rare encoder is applied to handle infrequent categorical values.
-    - **Creating New Variables:** New variables are created to enhance the predictive power of the model.
-    - **Encoding Operations:** Categorical variables are encoded for model compatibility.
+   - Treat rare categories and encode variables for modeling.
+   - Create new features to improve predictive accuracy.
+   - Address missing and extreme values.
 
-3. **Model Building:**
-    - **Data Splitting:** The dataset is split into training and testing sets.
-    - **Model Development:** Various machine learning models are built using the training data, and their performance is evaluated.
-    - **Hyperparameter Optimization:** Hyperparameters of the models are optimized to enhance performance.
-    - **Variable Importance Examination:** The importance of variables in predicting house prices is analyzed to gain insights into the model's decision-making process.
+3. **Modeling:**
+   - Split dataset for training and testing.
+   - Build and compare regression models.
+   - Tune hyperparameters for optimal results.
+   - Evaluate feature importance.
+
+## Usage
+
+Code examples and instructions are provided in the notebooks and scripts within this repository.
+
+---
+
+## Results / Evaluation
+
+The best performing model achieved a root mean squared error (RMSE) of 0.127 on the test data. Key features impacting predictions included OverallQual, GrLivArea, and YearBuilt. Further improvements are possible with additional feature engineering and ensemble methods.
+
+## Technologies
+
+- Python, Pandas, NumPy, scikit-learn
+- Visualization: matplotlib, seaborn
+
+## License
+
+This project is MIT licensed.
